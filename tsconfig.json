@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-unless": [
+        "dist/ngx-unless"
+      ],
+      "ngx-unless/*": [
+        "dist/ngx-unless/*"
+      ]
+    }
   }
 }
