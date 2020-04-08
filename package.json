@@ -1,14 +1,15 @@
 {
   "name": "nopalws",
-  "version": "1.0.7",
+  "version": "1.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build ngx-unless",
     "bump": "rm -rf dist",
     "publish": "cd dist/ngx-unless & npm publish",
+    "ngx-unless-patch": "cd projects/ngx-unless & npm version patch",
     "build:publish": "npm run build & npm run copy-readme & npm run publish",
-    "build:publish:patch": "npm run bump && npm version patch & npm run build & npm run copy-readme",
+    "build:publish:patch": "npm run bump & npm run ngx-unless-patch & npm version patch & npm run build & npm run copy-readme",
     "copy-readme": "cp README.md dist/ngx-unless",
     "test": "ng test",
     "lint": "ng lint"
