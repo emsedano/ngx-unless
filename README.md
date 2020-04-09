@@ -7,9 +7,9 @@ Angular library which is the opposite to `*ngIf`, it also preserves the same con
 ```html
 <p *ngxUnless="Conditions.falsy; then thenRef; else elseRef"> Alien exists</p>
 
-<!-- assuming ->
-<ng-template #thenRef>Templated Alien exists<ng-template>
-<ng-template #elseRef>Else Alien DOES NOT exists<ng-template>
+<!-- assuming -->
+<ng-template #thenRef>Templated Alien exists</ng-template>
+<ng-template #elseRef>Else Alien DOES NOT exists</ng-template>
 ```
 
 Since falsy evaluated condition will be using the thenRef, then your you might get as output will be
