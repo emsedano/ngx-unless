@@ -5,7 +5,7 @@
 Angular library which is the opposite to `*ngIf`, it also preserves the same context
 
 ```html
-<p>*ngxUnless="Conditions.falsy; then thenRef; else elseRef"> Alien exists</p>
+<p*ngxUnless="Conditions.falsy; then thenRef; else elseRef"> Alien exists</p>
 ```
 
 Positive statements enhance readability so instead of doing `*ngIf="!isReady"` you use `*ngxUnless="isReady`.
